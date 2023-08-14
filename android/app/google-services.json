@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678652111557",
+    "project_id": "test-todos-app",
+    "storage_bucket": "test-todos-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678652111557:android:6cebb869a9cbaf0eac1eac",
+        "android_client_info": {
+          "package_name": "com.example.to_do"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678652111557-d5u1o21kn887okakslminor9ipl8e0o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYYlI7gBerelcr6ByleO3SlqEVug58dkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678652111557-d5u1o21kn887okakslminor9ipl8e0o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -22,6 +22,25 @@ class Todo {
       required this.description,
       required this.completed});
 
-  @override
-  String toString() => '$id: $title: $description: $completed';
+  // @override
+  // String toString() => '$id: $title: $description: $completed';
+
+  factory Todo.fromJson(Map<String, dynamic> json) {
+    return Todo(
+      id: json['id'] as String,
+      title: json['title'] as String,
+      description: json['description'] as String,
+      completed: json['completed'] as bool,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'completed': completed,
+    };
+  }
+
 }

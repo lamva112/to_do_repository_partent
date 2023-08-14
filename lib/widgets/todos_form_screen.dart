@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 // import 'package:provider/provider.dart';
 // import 'package:to_do_app/providers/todos_provider.dart';
 
 import '../models/todo.dart';
+import '../providers/todos_provider.dart';
 
 class TodosFormScreen extends StatefulWidget {
   const TodosFormScreen({Key? key, this.todo}) : super(key: key);
@@ -88,9 +90,9 @@ class _TodosFormScreenState extends State<TodosFormScreen> {
         completed: widget.todo?.completed ?? false,
       );
 
-      // widget.todo == null
-      //     ? context.read<TodosProvider>().addTodo(todo)
-      //     : context.read<TodosProvider>().update(todo);
+      widget.todo == null
+          ? context.read<TodosProvider>().addTodo(todo)
+          : context.read<TodosProvider>().update(todo);
 
       Navigator.pop(context);
     }

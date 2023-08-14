@@ -5,7 +5,7 @@ import 'package:to_do/models/todo.dart';
 class TodoDbService implements TodoDataService {
   late Box box;
 
-  TodoDBProvider() {
+  TodoDbService() {
     _initHive();
   }
 
@@ -33,5 +33,6 @@ class TodoDbService implements TodoDataService {
 
   @override
   Future<void> updateTodo(Todo todo) async {
+    await box.put(todo.id, todo);
   }
 }
